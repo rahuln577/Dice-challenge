@@ -37,6 +37,49 @@
 
 
     </style>
+        <script type="text/javascript">
+            if(performance.navigation.type==performance.navigation.TYPE_RELOAD){
+                let p1,p2;
+                p1=Math.floor(Math.random()*6)+1;
+                p2=Math.floor(Math.random()*6)+1;
+                let winner=document.getElementById("res");
+                if(p1>p2)winner.innerHTML="Player 1 wins"
+                else if(p1==p2) winner.innerHTML="DRAW"
+                else winner.innerHTML="Player 2 wins"
+                let pla1=document.getElementById("pla1");
+                switch (p1)
+                {
+                    case 1:pla1.src="./Images/dice1.png";
+                    break;
+                    case 2:pla1.src="./Images/dice2.png";
+                    break;
+                    case 3:pla1.src="./Images/dice3.png";
+                    break;
+                    case 4:pla1.src="./Images/dice4.png";
+                    break;
+                    case 5:pla1.src="./Images/dice5.png";
+                    break;
+                    case 6:pla1.src="./Images/dice6.png";
+                    break;
+                }
+                switch (p2)
+                {
+                    case 1:pla2.src="./Images/dice1.png";
+                    break;
+                    case 2:pla2.src="./Images/dice2.png";
+                    break;
+                    case 3:pla2.src="./Images/dice3.png";
+                    break;
+                    case 4:pla2.src="./Images/dice4.png";
+                    break;
+                    case 5:pla2.src="./Images/dice5.png";
+                    break;
+                    case 6:pla2.src="./Images/dice6.png";
+                    break;
+                }
+    
+            }
+        </script>
 </head>
 <body>
     <div id="main">
@@ -52,47 +95,5 @@
         </div>
         </div>
     </div>
-    <script type="text/javascript">
-        if(performance.navigation.type==performance.navigation.TYPE_RELOAD){
-            let p1,p2;
-            p1=Math.floor(Math.random()*6)+1;
-            p2=Math.floor(Math.random()*6)+1;
-            let winner=document.getElementById("res");
-            if(p1>p2)winner.innerHTML="Player 1 wins"
-            else if(p1==p2) winner.innerHTML="DRAW"
-            else winner.innerHTML="Player 2 wins"
-            let pla1=document.getElementById("pla1");
-            switch (p1)
-            {
-                case 1:pla1.src="./Images/dice1.png";
-                break;
-                case 2:pla1.src="./Images/dice2.png";
-                break;
-                case 3:pla1.src="./Images/dice3.png";
-                break;
-                case 4:pla1.src="./Images/dice4.png";
-                break;
-                case 5:pla1.src="./Images/dice5.png";
-                break;
-                case 6:pla1.src="./Images/dice6.png";
-                break;
-            }
-            switch (p2)
-            {
-                case 1:pla2.src="./Images/dice1.png";
-                break;
-                case 2:pla2.src="./Images/dice2.png";
-                break;
-                case 3:pla2.src="./Images/dice3.png";
-                break;
-                case 4:pla2.src="./Images/dice4.png";
-                break;
-                case 5:pla2.src="./Images/dice5.png";
-                break;
-                case 6:pla2.src="./Images/dice6.png";
-                break;
-            }
 
-        }
-    </script>
 </body>
